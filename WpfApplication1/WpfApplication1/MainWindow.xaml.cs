@@ -29,12 +29,16 @@ namespace WpfApplication1
         {
             try
             {
+                //定義變數
                 double H, W;
                 H = Convert.ToInt32(height.Text);
                 W = Convert.ToInt32(weight.Text);
+                //單位轉換
                 double h = H / 100;
+                //BMI公式計算
                 result.Text = (W / (h * h)).ToString();
             }
+            //除錯,處理非數字例外情況
             catch
             {
                 MessageBox.Show("請輸入數字喔!");
