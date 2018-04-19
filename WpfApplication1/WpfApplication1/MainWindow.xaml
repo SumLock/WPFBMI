@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Canvas Background="Green">
+        <TextBlock FontSize="28" Foreground="White" Canvas.Top="32" Canvas.Left="10">請輸入身高(公分):</TextBlock>
+        <TextBlock FontSize="28" Foreground="White" Canvas.Top="91" Canvas.Left="10">請輸入體重(公斤):</TextBlock>
+        <TextBox x:Name="height" TextChanged="TextBox_TextChanged" Width="258" Canvas.Left="250" Canvas.Top="34" Height="36"></TextBox>
+        <TextBox x:Name="weight" Width="258" Canvas.Left="250" Canvas.Top="91" Height="36"></TextBox>
+        <Button x:Name="button1" FontSize="30" Foreground="Red" Background="DarkBlue" Click="Button_Click" Content="開始計算" Canvas.Left="139" Canvas.Top="146" Height="74" Width="213"/>
+        <TextBox x:Name="result" Canvas.Left="225" Canvas.Top="242" Width="202" Height="36" RenderTransformOrigin="0.096,0.297"></TextBox>
+        <TextBlock FontSize="28" Foreground="White" Canvas.Left="49" Canvas.Top="242">BMI計算結果:</TextBlock>
+    </Canvas>
+</Window>
